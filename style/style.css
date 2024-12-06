@@ -1,0 +1,172 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+header{
+    background-color:#F3F3F3;
+    color:black;
+    }
+
+header h4{
+    float:right;
+    text-align:center;
+    margin-top:5px;
+    margin-right:5px;
+}
+nav{
+   display:flex;
+   justify-content:flex-start;
+   align-items:flex-end;
+   width:100%;
+   height:100px;
+   background-color:#F3F3F3;
+   padding:10px;
+
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
+
+a{
+    font-size: 1.5em;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+    margin-left:10px;
+    margin-right:40px;
+    font-family:sans-serif;
+}
+
+.main_img{
+    width:70%;
+    max-height:500px;
+    
+}
+
+.gallery{
+    width:22%;
+    margin:5px;
+    max-height:300px;
+}
+
+.image_container{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:20px;
+
+}
+
+footer{
+    margin-top:40px;
+    background-color:#F3F3F3;
+    height:100px;
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    color:black;
+}
+table{
+    border-spacing:10px;
+}
+
+
+table tr th{
+  background-color:black;
+  color:white;
+  padding:5px;
+}
+
+table tr td{
+    max-width:400px;
+   text-align:left;
+}
+
+form{
+    background-color:#D9D9D9;
+    height:500px;
+    width:40%;
+    
+}
+
+form h2{
+    margin-top:10px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+form input{
+    margin-top:10px;
+    font-size:24px;
+    outline: none;
+    border:none;
+}
+
+.form_div{
+    display:flex;
+    flex-direction:column;
+}
+
+.form_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.submit{
+    background-color:#007BEE;
+    padding:10px;
+    color:white;
+    width:250px;
+    margin-top:30px;
+}
+
+.submit:hover{
+    cursor:pointer;
+}
+
+.contact{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction:column;
+        align-items:center;
+        height:auto;
+    }
+
+    .main_img{
+        width:80%;
+    }
+
+    footer{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .gallery{
+        height:auto;
+    }
+    form{
+        width:80%;
+    }
+
+    iframe{
+        width:80%;
+    }
+   
+}
+
+@media only screen and (max-width: 850px) {
+    form{
+        width:80%;
+    }
+}
